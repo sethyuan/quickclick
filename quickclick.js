@@ -1,15 +1,3 @@
-/**
- * USAGE via global:
- *
- * QuickClick(document.body);
- *
- *
- * USAGE via CommonJS:
- *
- * var QuickClick = require("quickclick");
- * quickclick(document.body);
- */
-
 "use strict";
 
 (function() {

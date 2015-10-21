@@ -1,7 +1,7 @@
 {
   "name": "quickclick",
-  "main": "index.js",
-  "version": "0.1.0",
+  "main": "quickclick.js",
+  "version": "0.1.1",
   "homepage": "https://github.com/sethyuan/quickclick",
   "authors": [
     "Seth Yuan <cavingdeep@gmail.com>"

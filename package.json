@@ -1,8 +1,11 @@
 {
   "name": "quickclick",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple heuristic to ensure quick click events on mobile browsers.",
-  "main": "index.js",
+  "main": "quickclick.js",
+  "scripts": {
+    "prepublish": "./node_modules/.bin/uglifyjs -m -o quickclick.min.js quickclick.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sethyuan/quickclick.git"
@@ -20,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/sethyuan/quickclick/issues"
   },
-  "homepage": "https://github.com/sethyuan/quickclick#readme"
+  "homepage": "https://github.com/sethyuan/quickclick#readme",
+  "devDependencies": {
+    "uglify-js": "2.x"
+  }
 }
