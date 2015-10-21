@@ -1,0 +1,24 @@
+{
+  "name": "quickclick",
+  "version": "0.1.0",
+  "description": "A simple heuristic to ensure quick click events on mobile browsers.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethyuan/quickclick.git"
+  },
+  "keywords": [
+    "click",
+    "fast",
+    "quick",
+    "fastclick",
+    "mobile",
+    "browser"
+  ],
+  "author": "Seth Yuan <cavingdeep@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sethyuan/quickclick/issues"
+  },
+  "homepage": "https://github.com/sethyuan/quickclick#readme"
+}
