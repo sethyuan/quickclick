@@ -19,7 +19,9 @@
     // Chrome and Firefox with meta viewport and width=device-width
     // don't need QuickClick.
     var viewport = document.querySelector("meta[name=viewport]");
-    if (viewport && /width=device-width/.test(viewport.content)) return;
+    if (viewport
+        && /width=device-width/.test(viewport.content)
+        && !/Mac OS X/.test(navigator.userAgent)) return;
 
     root.addEventListener("touchend", function(e) {
       e.preventDefault();
