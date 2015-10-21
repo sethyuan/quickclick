@@ -1,0 +1,15 @@
+{
+  "name": "quickclick",
+  "main": "index.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sethyuan/quickclick",
+  "authors": [
+    "Seth Yuan <cavingdeep@gmail.com>"
+  ],
+  "description": "A simple heuristic to ensure quick click events on mobile browsers.",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT"
+}
