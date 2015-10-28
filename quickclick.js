@@ -11,10 +11,19 @@
         && /width=device-width/.test(viewport.content)
         && !/Mac OS X/.test(navigator.userAgent)) return;
 
+    var hasTouchMove = false;
+
+    root.addEventListener("touchmove", function(e) {
+      hasTouchMove = true;
+    });
+
     root.addEventListener("touchend", function(e) {
       e.preventDefault();
-      if (isFocusNeeded(e.target)) e.target.focus();
-      e.target.dispatchEvent(new Event("click", {bubbles: true, cancelable: true}));
+      if (!hasTouchMove) {
+        if (isFocusNeeded(e.target)) e.target.focus();
+        e.target.dispatchEvent(new Event("click", {bubbles: true, cancelable: true}));
+      }
+      hasTouchMove = false;
     }, false);
   }
 
