@@ -49,7 +49,7 @@
   }
 
   // Support for CommonJS and global.
-  if (module != null && exports != null) {
+  if (typeof module === "object" && module && module.exports) {
     module.exports = QuickClick;
   } else {
     window.QuickClick = QuickClick;

@@ -1,6 +1,6 @@
 {
   "name": "quickclick",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple heuristic to ensure quick click events on mobile browsers.",
   "main": "quickclick.js",
   "scripts": {
